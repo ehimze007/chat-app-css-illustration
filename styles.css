@@ -18,7 +18,7 @@ body {
   z-index: -1000;
   background-color: hsl(276, 55%, 52%);
   width: 100vw;
-  height: 60vh;
+  height: 480px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
@@ -107,7 +107,7 @@ body {
 .first-chat-set {
   display: inline-block;
 }
-.customer-texts-color{
+.customer-texts-color {
   color: hsl(276, 55%, 52%);
   background-color: hsl(289, 63%, 79%);
 }
@@ -164,7 +164,7 @@ body {
     hsl(293, 100%, 63%),
     hsl(264, 100%, 61%)
   );
-  width: 70%;
+  width: 80%;
   color: #ffffff;
 }
 
@@ -224,10 +224,11 @@ body {
 .booking-info-container h1 {
   font-size: 30px;
   font-weight: 500;
+  color: hsl(271, 36%, 24%);
 }
 
 .booking-info-container p {
-  width: 60%;
+  width: 100%;
   font-size: 16px;
   margin: auto;
   color: hsl(206, 6%, 79%);
@@ -239,4 +240,37 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/******************************Desktop Responsiveness*******************************/
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    width: 60vw;
+    padding-top: 80px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .booking-info-container {
+    width: 60%;
+    margin-left: 24px;
+    text-align: left;
+  }
+  .booking-info-container p {
+    width: 100%;
+  }
+
+  .background-design {
+    position: absolute;
+    top: 0px;
+    left: -10vw;
+    z-index: -1000;
+    background-color: hsl(276, 55%, 52%);
+    width: 40vw;
+    height: 600px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
 }
