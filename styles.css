@@ -1,10 +1,14 @@
 /* Implementing a mobile first design approach*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   background-color: hsl(270, 20%, 96%);
+  font-family: "Rubik";
+  font-size: 8px;
 }
 
 .background-design {
@@ -20,18 +24,219 @@ body {
 }
 
 .phone-image {
-  width: 400px;
-  height: 60vh;
-  border: solid 16px hsl(0, 0%, 100%);
+  position: relative;
+  width: 200px;
+  height: fit-content;
+  border: solid 8px hsl(0, 0%, 100%);
   border-radius: 25px;
   background-color: hsl(270, 20%, 96%);
-  padding: 2%;
   margin: 10vh auto 0;
 }
-/* .attribution {
+
+.top-white-div {
+  width: 60%;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: 19%;
+  border-radius: 25px;
+  height: 20px;
+  background-color: white;
+}
+
+.user-profile-container {
+  width: auto;
+  margin: 0;
+  z-index: -900;
+  display: flex;
+  background-image: linear-gradient(
+    90deg,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  border-radius: 20px 20px 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 16px 8px 16px;
+  color: #ffffff;
+}
+
+.sub-user-profile-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.caret-icon-left {
+  width: 1.8em;
+  height: 1em;
+  background-image: url("./images/caret-icon-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile-avatar {
+  border: solid 2px white;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.user-name-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-left: 18px;
+}
+
+.user-name-status > p,
+.user-name-status > h3 {
+  margin: 0;
+}
+.user-name-status > p {
+  opacity: 70%;
+}
+.nav-menu-icon {
+  width: 10px;
+  height: 10px;
+}
+/* ********************************************Chat section**************************************/
+.main-phone-container {
+  padding: 0.6em;
+}
+
+.first-chat-set {
+  display: inline-block;
+}
+.customer-texts-color{
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(289, 63%, 79%);
+}
+.first-chat-set p:first-child {
+  margin-bottom: 0px;
+}
+.chat-box {
+  display: inline-block;
+  padding: 2% 6%;
+}
+.customer-texts {
+  border-radius: 20px 20px 20px 8px;
+}
+.chat-text {
+  display: inline-block;
+  background-color: hsl(206, 6%, 79%);
+  padding: 4%;
+}
+.seller-texts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.seller-texts {
+  background-color: #ffffff;
+  border-radius: 20px 20px 8px 20px;
+}
+
+.seller-texts:nth-child(3) {
+  margin-top: 0;
+}
+.dog-images-container {
+  display: flex;
+  justify-content: end;
+}
+.dog-images {
+  width: 3em;
+  margin-left: 0.6em;
+  border-radius: 10px;
+}
+
+.automated-response-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.automated-amount-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  background-image: linear-gradient(
+    90deg,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 70%;
+  color: #ffffff;
+}
+
+.amount {
+  align-self: center;
+}
+
+.automated-amount-text div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.automated-amount-text div p {
+  margin-left: 8px;
+}
+.circle-icon {
+  width: 20px;
+  height: 16px;
+}
+
+.input-holder {
+  position: relative;
+  margin-top: 32px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.input-text {
+  border-radius: 25px;
+  padding-right: 40px;
+  padding-left: 20px;
+  width: 100%;
+  z-index: -800;
+  border: none;
+  height: 30px;
+  font-size: 8px;
+}
+
+.button-icon-right {
+  position: absolute;
+  background-image: url("./images/circle-icon-right.svg");
+  background-position: 50%;
+  top: 3px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  border: hsl(271, 36%, 24%);
+}
+
+/* ********************************************* */
+.booking-info-container {
+  margin: 20px auto;
+  width: 60%;
+  text-align: center;
+}
+.booking-info-container h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.booking-info-container p {
+  width: 60%;
+  font-size: 16px;
+  margin: auto;
+  color: hsl(206, 6%, 79%);
+}
+.attribution {
   font-size: 11px;
   text-align: center;
+  margin: 60px 20px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
