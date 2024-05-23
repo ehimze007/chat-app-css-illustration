@@ -248,6 +248,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 60px;
   padding: 60px 20px;
 }
 .attribution a {
