@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-I gained a strong understanding of using positioning, never understood how much importnace it has until I had to design the mobile chat interface.
+I gained a strong understanding of using positioning; I never understood how much importance it has until I had to design the mobile chat interface.
 
 <!-- If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more. -->
 
