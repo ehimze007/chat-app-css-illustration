@@ -10,7 +10,6 @@ body {
   background-color: hsl(270, 20%, 96%);
   font-family: "Rubik";
   font-size: 8px;
-  /* height: 100vh; */
 }
 main {
   padding-top: 10vh;
@@ -20,7 +19,11 @@ main {
   top: 0px;
   right: 50vw;
   z-index: -1000;
-  background-color: hsl(276, 55%, 52%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
   width: 100vw;
   height: 480px;
   border-bottom-left-radius: 50%;
@@ -196,6 +199,9 @@ main {
 .automated-amount-text div p {
   margin-left: 8px;
 }
+.autoresponse-text {
+  color: hsl(270, 19%, 88%);
+}
 .circle-icon {
   width: 20px;
   height: 16px;
@@ -206,6 +212,9 @@ main {
   margin-top: 16px;
   background-color: #ffffff;
   border-radius: 25px;
+}
+input:focus {
+  outline: hsl(289, 100%, 72%);
 }
 .input-text {
   border-radius: 25px;
