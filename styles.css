@@ -11,6 +11,7 @@ body {
   background-color: hsl(270, 20%, 96%);
   font-family: "Rubik";
   font-size: 8px;
+  overflow-x: hidden;
 }
 main {
   padding-top: 10vh;
@@ -30,6 +31,7 @@ main {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+
 .background-design2 {
   position: absolute;
   bottom: 0px;
@@ -40,6 +42,7 @@ main {
   border-radius: 34em 0 0 0;
   background-color: hsl(270, 20%, 94%);
 }
+
 .phone-image {
   position: relative;
   width: 200px;
@@ -242,7 +245,6 @@ input:focus {
   border: hsl(271, 36%, 24%);
 }
 
-/* ********************************************* */
 .booking-info-container {
   margin: 20px auto;
   width: 60%;
@@ -303,12 +305,13 @@ input:focus {
   }
 
   .background-design2 {
+    position: absolute;
     bottom: 0px;
-    left: 70vw;
-    width: 30vw;
-    height: 80%;
+    left: 74.7vw;
     z-index: -1000;
-    border-radius: 24em 0 0 0;
     background-color: hsl(270, 20%, 94%);
+    width: 24vw;
+    height: 90%;
+    border-radius: 30em 0 0 0;
   }
 }
